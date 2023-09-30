@@ -2,7 +2,7 @@ function add()
 {
         n1 = document.getElementById("num1").value;
         n2 = document.getElementById("num2").value;
-        document.getElementById("result").innerHTML = n1 + n2;
+        document.getElementById("result").innerHTML = parseInt(n1) + parseInt(n2);
 }
 
 function sub()
