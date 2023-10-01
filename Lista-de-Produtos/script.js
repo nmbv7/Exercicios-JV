@@ -1,20 +1,21 @@
+let products = [
+    {name:"Iphone", category: "Telemoveis", preço: 1500}
+    {name:"Samsung", category: "Telemoveis", preço: 1300}
+    {name:"AirPods", category: "HeadPhones", preço: 150}
+]
 
-class Produtos{
 
-    constructor (nome,categoria,preco){
+let myList = document.getElementById('productList');
 
-        this.nome = nome
-        this.categoria = categoria
-        this.preco = preco
-    }
+
+for(i = 0; i < products.length; i++) {
+
+    let product = products[i];
+
+    let listItem = document.createElement("li");
+
+    listItem.textContent = product.name + "(" + product.category + ")" + product.price + " €";
+
+    myList.appendChild(listItem);
+
 }
-
-var produto1 = new Produtos('Iphone', 'telemoveis', 1300);
-var produto2 = new Produtos ('Samsung', 'telemoveis', 1200);
-var produto3 = new Produtos ('MSI', 'computadores', 2000);
-var produto4 = new Produtos ('Acer', 'Computadores', 2500);
-
-document.getElementById("p1").innerHTML = Produtos;
-
-
-
