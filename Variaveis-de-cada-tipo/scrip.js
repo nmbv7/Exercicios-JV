@@ -1,5 +1,5 @@
 var nome = 'Nuno'
 var idade = 32
-var isWoman = false
+var isStudent = true
 
-console.log()
+console.log("Meu nome é " + nome + " tenho " + idade + " se se sou estudante?!" + isStudent)
